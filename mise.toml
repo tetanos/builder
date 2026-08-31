@@ -1,6 +1,3 @@
-[settings]
-lockfile = true
-
 [tasks.build]
 description = "Build the builder image"
 run = "docker build -t tetanos/builder ."
