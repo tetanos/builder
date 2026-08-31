@@ -17,8 +17,8 @@ mise run build
 ```
 
 Run it with the kernel source mounted at `/build`; the container invokes
-the kernel's `make iso` target:
+the kernel's `build` task:
 
 ```sh
-docker run --rm -v "$(pwd)":/build tetanos/builder
+mise run run
 ```
