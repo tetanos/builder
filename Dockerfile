@@ -1,4 +1,4 @@
-FROM rust
+FROM rust:1.98
 
 RUN apt-get update
 RUN apt-get install -y binutils nasm grub-pc-bin xorriso make
