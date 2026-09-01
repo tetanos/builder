@@ -2,6 +2,6 @@
 description = "Build the builder image"
 run = "docker build -t tetanos/builder ."
 
-[tasks.run]
+[tasks.kernel]
 description = "Build the kernel in the current directory with the image"
 run = 'docker run --rm -v "$PWD":/build tetanos/builder'

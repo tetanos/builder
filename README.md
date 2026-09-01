@@ -18,5 +18,5 @@ Run it with the kernel source mounted at `/build`; the container invokes
 the kernel's `build` task:
 
 ```sh
-mise run run
+mise run kernel
 ```
