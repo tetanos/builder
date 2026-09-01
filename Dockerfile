@@ -12,9 +12,5 @@ ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
 ENV PATH="/mise/shims:$PATH"
 RUN curl https://mise.run | sh
 
-RUN rustup default nightly
-RUN rustup component add rust-src
-RUN cargo install xargo
-
 WORKDIR /build
 ENTRYPOINT ["mise", "run", "build"]

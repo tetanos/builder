@@ -1,12 +1,10 @@
 # builder
 
 Docker image providing the cross-compilation toolchain for the TetanOS
-kernel. It packages Rust nightly with the `rust-src` component, `xargo`
-for building a sysroot for the kernel's custom target, and the tools that
-turn the compiled kernel into a bootable ISO — NASM, GRUB, and xorriso —
-so the kernel builds the same way on any machine with Docker. The nightly
-toolchain is resolved at image build time, so two images built months apart
-do not carry the same compiler.
+kernel. It packages the tools that turn the compiled kernel into a
+bootable ISO — NASM, GRUB, and xorriso — together with mise, which
+installs the Rust toolchain the kernel's own configuration pins, so the
+kernel builds the same way on any machine with Docker.
 
 ## Usage
 
